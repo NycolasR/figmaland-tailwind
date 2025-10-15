@@ -1,1 +1,22 @@
+/* src/index.css ou src/globals.css */
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/Graphik/Graphik-Regular-Trial.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: url("/fonts/Graphik/Graphik-Bold-Trial.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-sans: "Graphik", sans-serif;
+}
