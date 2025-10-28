@@ -1,18 +1,20 @@
+/** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx,html}'],
-
   theme: {
-    // define variáveis CSS no :root
-    extend: {
-      '--color-primary': '#2091F9',
-      '--color-text': '#252B42',
-      '--color-secondaryText': '#374754',
-      '--color-darkBackground': '#252B42',
-      '--font-graphik': 'Graphik, sans-serif',
-      '--font-graphik-bold': 'Graphik-bold, sans-serif',
-      '--breakpoint-xs': '400px',
+    fontFamily: {
+      graphik: ['Graphik', 'sans-serif'],
+      'graphik-bold': ['Graphik-bold', 'sans-serif'],
+    },
+    colors: {
+      primary: '#2091F9',
+      text: '#252B42',
+      secondaryText: '#374754',
+      darkBackground: '#252B42',
+    },
+    screens: {
+      xs: '400px',
     },
   },
-
-  // tailwind v4 não precisa de plugins normalmente
+  plugins: [],
 }
